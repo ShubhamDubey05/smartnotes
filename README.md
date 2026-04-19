@@ -12,7 +12,7 @@ It includes a complete authentication system, protected routes, and AI-powered d
 - User Register / Login
 - JWT Authentication (Secure Routes)
 - Password Hashing using bcrypt
-- Protected APIs for authorized users only
+- Protected APIs for authorized users
 
 ---
 
@@ -61,44 +61,38 @@ It includes a complete authentication system, protected routes, and AI-powered d
 
 ---
 
-## 📂 Project Structure (Industry Level)
- SmartNotes/
-│
-├── client/ (Frontend)
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/          # Images, icons, static files
-│   │   ├── components/      # Reusable UI components
-│   │   ├── pages/           # Pages (Home, Login, Register, Dashboard)
-│   │   ├── context/         # Auth & Global State (Context API)
-│   │   ├── services/        # API service layer (Axios calls)
-│   │   ├── hooks/           # Custom React hooks
-│   │   ├── utils/           # Helper functions
-│   │   ├── App.jsx          # Main React App
-│   │   └── main.jsx         # Entry point
-│
-├── server/ (Backend)
-│   ├── config/              # DB connection, Gemini config
-│   ├── controllers/         # Business logic (Auth, Notes, AI)
-│   ├── models/              # Mongoose schemas (User, Notes)
-│   ├── routes/              # API routes (auth, notes, ai)
-│   ├── middleware/          # JWT authentication middleware
-│   ├── services/            # External services (Gemini, PDF)
-│   ├── utils/               # Helper functions
-│   ├── uploads/             # Uploaded files storage
-│   ├── app.js               # Express app setup
-│   └── server.js            # Server entry point
-│
-├── .env                     # Environment variables
-├── package.json
-└── README.md
+## 📂 Project Structure
 
+### 🖥️ Client (Frontend)
+- assets → images, icons, static files  
+- components → reusable UI components  
+- pages → Login, Register, Dashboard, Home  
+- context → authentication & global state  
+- services → API calls (Axios layer)  
+- hooks → custom React hooks  
+- utils → helper functions  
+- App.jsx → main React app  
+- main.jsx → entry point  
+
+---
+
+### ⚙️ Server (Backend)
+- config → database & Gemini configuration  
+- controllers → business logic (auth, notes, AI)  
+- models → MongoDB schemas (User, Notes)  
+- routes → API routes (auth, notes, ai)  
+- middleware → JWT authentication  
+- services → external services (Gemini, PDF)  
+- utils → helper functions  
+- uploads → stored files  
+- app.js → express app setup  
+- server.js → server entry point  
 
 ---
 
 ## 🔐 Authentication Flow
 
-1. User registers → password hashed & stored in DB  
+1. User registers → password is hashed & stored in DB  
 2. User logs in → JWT token generated  
 3. Token stored in frontend (localStorage)  
 4. Token used for protected routes  
@@ -107,39 +101,3 @@ It includes a complete authentication system, protected routes, and AI-powered d
 ---
 
 ## 🤖 AI Workflow (Gemini)
-
----
-
-## 🎯 Learning Outcomes
-
-- Full-stack MERN architecture
-- Secure authentication system (JWT)
-- AI integration using Google Gemini API
-- File upload & processing system
-- PDF generation from dynamic data
-- Scalable industry-level project structure
-
----
-
-## 🔮 Future Enhancements
-
-- 🧠 AI Chat Assistant (chat with PDFs)
-- 🔍 Smart search inside notes
-- 📱 Mobile responsive PWA
-- ☁️ Cloud storage (AWS / Cloudinary)
-- 🎤 Voice-to-notes feature
-- 🤝 Collaborative notes sharing
-- 📊 Analytics dashboard for notes
-
----
-
-## 👨‍💻 Developer
-
-- Name: Shubham Dubey  
-- Role: MERN Stack Developer  
-
----
-
-## 📌 Note
-
-This project is actively evolving with AI enhancements and production-level optimizations for better scalability and user experience.
